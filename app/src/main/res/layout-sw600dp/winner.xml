@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg_pop_up_scor"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="500dp"
+        android:layout_height="350dp"
+        android:background="@color/Tranparent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/fontlaos"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textSize="40sp"
+          android:background="@drawable/xx" />
+
+        <TextView
+            android:id="@+id/playerwinner"
+            android:layout_width="145dp"
+            android:layout_height="84dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/fontlaos"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="4"
+            android:textColor="#33C2C7"
+            android:textSize="60sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="96dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/btn_pop_home"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/pop_up_scorr_home" />
+
+            <ImageView
+                android:id="@+id/btn_pop_Return"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/pop_up_scorr_return" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_btn_read"
+    tools:context=".Control.Game_XO">
+ <TextView
+     android:layout_width="wrap_content"
+     android:text="ເກມ XO"
+     android:textSize="35sp"
+     android:layout_marginLeft="350dp"
+     android:textColor="@color/white"
+     android:fontFamily="@font/fontlaos"
+     android:layout_height="wrap_content"
+     app:layout_constraintTop_toTopOf="parent"
+     app:layout_constraintLeft_toLeftOf="parent"/>
+   <TextView
+       android:id="@+id/playerOne"
+       android:layout_width="wrap_content"
+       android:text="ຜູ້ຫຼີ້ນ 1"
+       android:layout_marginTop="200dp"
+       android:fontFamily="@font/fontlaos"
+       android:layout_marginLeft="150dp"
+       android:layout_height="wrap_content"
+       android:textSize="35sp"
+       android:textColor="@color/white"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintLeft_toLeftOf="parent"/>
+    <TextView
+        android:id="@+id/playOnescore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:fontFamily="@font/animated"
+        android:textSize="45sp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/playerOne"
+        app:layout_constraintLeft_toLeftOf="@id/playerOne"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"/>
+    <TextView
+        android:id="@+id/playTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ຜູ້ຫຼີ້ນ 2"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:fontFamily="@font/fontlaos"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="150dp"
+        android:layout_marginTop="200dp"/>
+    <TextView
+        android:id="@+id/playTwoscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="45sp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/animated"
+        app:layout_constraintTop_toBottomOf="@id/playTwo"
+        app:layout_constraintRight_toRightOf="@id/playTwo"
+        android:layout_marginRight="40dp"/>
+
+    <TextView
+        android:id="@+id/playerStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player One is Winning !"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+    <Button
+        android:id="@+id/btn_0"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:textSize="60dp"
+        android:fontFamily="@font/font_xo"
+       android:background="@drawable/btn_0"
+        app:layout_constraintTop_toBottomOf="@id/playerStatus"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="80dp"/>
+    <Button
+        android:id="@+id/btn_1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:textSize="60dp"
+        android:fontFamily="@font/font_xo"
+        android:background="@drawable/btn_1"
+        app:layout_constraintTop_toTopOf="@id/btn_0"
+        app:layout_constraintLeft_toRightOf="@id/btn_0" />
+    <Button
+        android:id="@+id/btn_2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:fontFamily="@font/font_xo"
+        android:textSize="60dp"
+        android:background="@drawable/btn_2"
+        app:layout_constraintTop_toTopOf="@id/btn_1"
+        app:layout_constraintLeft_toRightOf="@id/btn_1" />
+    <Button
+        android:id="@+id/btn_3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:textSize="60dp"
+        android:fontFamily="@font/font_xo"
+        android:background="@drawable/btn_3"
+        app:layout_constraintTop_toBottomOf="@id/btn_0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="300dp"
+        />
+    <Button
+        android:id="@+id/btn_4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:fontFamily="@font/font_xo"
+        android:textSize="60dp"
+        android:background="@drawable/btn_4"
+        app:layout_constraintTop_toTopOf="@id/btn_3"
+        app:layout_constraintLeft_toRightOf="@id/btn_3" />
+    <Button
+        android:id="@+id/btn_5"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:textSize="60dp"
+        android:fontFamily="@font/font_xo"
+        android:background="@drawable/btn_5"
+        app:layout_constraintTop_toTopOf="@id/btn_4"
+        app:layout_constraintLeft_toRightOf="@id/btn_4" />
+    <Button
+        android:id="@+id/btn_6"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:textSize="60dp"
+        android:fontFamily="@font/font_xo"
+        android:background="@drawable/btn_6"
+        app:layout_constraintTop_toBottomOf="@id/btn_3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="300dp" />
+    <Button
+        android:id="@+id/btn_7"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:fontFamily="@font/font_xo"
+        android:textSize="60dp"
+        android:background="@drawable/btn_7"
+        app:layout_constraintTop_toTopOf="@id/btn_6"
+        app:layout_constraintLeft_toRightOf="@id/btn_6" />
+    <Button
+        android:id="@+id/btn_8"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:textSize="60dp"
+        android:fontFamily="@font/font_xo"
+        android:background="@drawable/btn_8"
+        app:layout_constraintTop_toTopOf="@id/btn_7"
+        app:layout_constraintLeft_toRightOf="@id/btn_7" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

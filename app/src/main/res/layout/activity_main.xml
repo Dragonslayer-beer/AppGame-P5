@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_lesson"
+    tools:context=".MainActivity">
+    <ImageView
+        android:id="@+id/logoata"
+        android:layout_width="120dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo_ata" />
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_toRightOf="@id/logoata"
+        android:src="@drawable/logo_pkasuang"/>
+
+
+
+    <ImageView
+        android:id="@+id/youtube"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/youtube" />
+
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/youtube"
+        android:layout_marginRight="-93dp"
+        android:layout_toLeftOf="@id/youtube"
+        android:src="@drawable/read_imformation" />
+
+    <ImageView
+        android:id="@+id/title"
+        android:layout_width="500dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/btn_main_name" />
+
+    <LinearLayout
+        android:id="@+id/btn_game_lesson"
+        android:layout_width="200dp"
+        android:layout_height="170dp"
+        android:layout_margin="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:layout_marginBottom="30dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/bg_btn_main" >
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_gravity="center"
+            android:layout_height="90dp"
+            android:src="@drawable/btn_game_lesson_image"/>
+        <Button
+            android:id="@+id/game_lesson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/btn_game_leson" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/btn_lesson"
+        android:layout_width="200dp"
+        android:layout_height="170dp"
+        android:layout_marginBottom="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@id/btn_game_lesson"
+        android:adjustViewBounds="true"
+        android:orientation="vertical"
+        android:scaleType="centerCrop"
+        android:background="@drawable/bg_btn_main" >
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:src="@drawable/btn_lesson_image" />
+
+        <Button
+            android:id="@+id/lesson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/btn_lesson" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/btn_game_brain"
+        android:layout_width="200dp"
+        android:layout_height="170dp"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:layout_toRightOf="@id/btn_game_lesson"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:background="@drawable/bg_btn_main" >
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/btn_brain_image"/>
+        <Button
+            android:id="@+id/game_brain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/btn_brarin" />
+    </LinearLayout>
+
+    <ToggleButton
+        android:id="@+id/toggleButton2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_toLeftOf="@id/youtube"
+        android:onClick="toggleSet"
+        android:textOff=""
+        android:textOn="" />
+
+</RelativeLayout>

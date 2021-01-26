@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_lesson"
+    tools:context=".menu.Lesson_activity">
+
+    <ImageView
+        android:id="@+id/btn_come_black"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/back" />
+
+    <ImageView
+        android:id="@+id/lesson"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:src="@drawable/borad_lesson" />
+
+    <ImageView
+
+        android:id="@+id/title"
+        android:layout_width="400dp"
+        android:layout_height="220dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ig_laiykatngame" />
+
+    <LinearLayout
+        android:id="@+id/btn_game_lesson"
+        android:layout_width="202dp"
+        android:layout_height="202dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="40dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/btn_gramar"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:id="@+id/btn_reading"
+        android:layout_width="202dp"
+        android:layout_height="202dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:layout_toLeftOf="@id/btn_game_lesson"
+        android:adjustViewBounds="true"
+        android:background="@drawable/brn_reading"
+        android:orientation="vertical"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:id="@+id/btn_write"
+        android:layout_width="202dp"
+        android:layout_height="202dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:layout_toRightOf="@id/btn_game_lesson"
+        android:adjustViewBounds="true"
+        android:background="@drawable/btn_writing"
+        android:orientation="vertical"
+        android:scaleType="centerCrop" />
+</RelativeLayout>

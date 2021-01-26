@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/black_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/bg_btn_mainq"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:backgroundTint="#00B7F9"
+        android:paddingRight="10dp"
+        android:paddingBottom="30dp" >
+
+        <Button
+            android:id="@+id/btnread"
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/brn_reading" />
+
+        <Button
+            android:id="@+id/btngramar"
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_gramar" />
+        <Button
+            android:layout_weight="1"
+            android:layout_marginTop="50dp"
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/btnwrite"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_writing" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/can"
+        android:layout_width="90dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/asd" />
+</RelativeLayout>

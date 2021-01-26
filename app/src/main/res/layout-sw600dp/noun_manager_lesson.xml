@@ -1,0 +1,2105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_lesson"
+    tools:context=".manager_lesson.read_manager_lesson">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/btn_come_black"
+                android:layout_width="1dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="2"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:id="@+id/lesson_game"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="180dp"
+                android:layout_weight="4"
+                android:adjustViewBounds="true"
+                android:fontFamily="@font/fontlaos"
+                android:text="  ບົດຮຽນ"
+                android:textColor="@color/white"
+                android:textSize="50sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/bg_manager_class"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="35dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/many1"
+                    android:layout_width="373dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="50dp"
+                    android:background="@color/Tranparent"
+                    android:fontFamily="@font/fontlaos"
+                    android:gravity="left|center_vertical"
+                    android:text="ບົດທີ່ 1   :  ສົນຮຽນໃໝ່"
+                    android:textColor="#33C2C7"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/Score1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="280dp"
+                    android:fontFamily="@font/animated"
+                    android:text="1/10"
+                    android:textColor="#A5A5A5"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/play_lss1"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/btn_manage_play"
+                    android:onClick="Next" />
+
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/many2"
+                        android:layout_width="374dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="35dp"
+                        android:background="@color/Tranparent"
+                        android:fontFamily="@font/fontlaos"
+                        android:gravity="left|center_vertical"
+                        android:text="ບົດທີ່ 2   :  ພົບຄູເກົ່າ"
+                        android:textColor="#33C2C7"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/Score2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="280dp"
+                        android:fontFamily="@font/animated"
+                        android:text="1/10"
+                        android:textColor="#A5A5A5"
+                        android:textSize="30sp" />
+
+                    <Button
+                        android:id="@+id/play_lss2"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30dp"
+                        android:background="@drawable/btn_manage_play"
+                        android:onClick="Next" />
+
+
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/many3"
+                    android:layout_width="372dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="50dp"
+                    android:background="@color/Tranparent"
+                    android:fontFamily="@font/fontlaos"
+                    android:gravity="left|center_vertical"
+                    android:text="ບົດທີ່ 3   :  ສະຕິລະວັງຕົວ"
+                    android:textColor="#33C2C7"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/Score3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="280dp"
+                    android:fontFamily="@font/animated"
+                    android:text="1/10"
+                    android:textColor="#A5A5A5"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/play_lss3"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/btn_manage_play"
+                    android:onClick="Next" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/many4"
+                        android:layout_width="371dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="35dp"
+                        android:background="@color/Tranparent"
+                        android:fontFamily="@font/fontlaos"
+                        android:gravity="left|center_vertical"
+
+                        android:text="ບົດທີ່ 4   :  ຝົນ"
+                        android:textColor="#33C2C7"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/Score4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="280dp"
+                        android:fontFamily="@font/animated"
+                        android:text="1/10"
+                        android:textColor="#A5A5A5"
+                        android:textSize="30sp" />
+
+                    <Button
+                        android:id="@+id/play_lss4"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30dp"
+                        android:background="@drawable/btn_manage_play"
+                        android:onClick="Next" />
+
+
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/many5"
+                    android:layout_width="373dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="50dp"
+                    android:background="@color/Tranparent"
+                    android:fontFamily="@font/fontlaos"
+                    android:gravity="left|center_vertical"
+                    android:text="ບົດທີ່ 5   :  ຊ້າງກັບນົກໄສ່"
+                    android:textColor="#33C2C7"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/Score5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="280dp"
+                    android:fontFamily="@font/animated"
+                    android:text="1/10"
+                    android:textColor="#A5A5A5"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/play_lss5"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/btn_manage_play"
+                    android:onClick="Next" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/many9"
+                    android:layout_width="376dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="50dp"
+                    android:background="@color/Tranparent"
+                    android:fontFamily="@font/fontlaos"
+                    android:gravity="left|center_vertical"
+                    android:text="ບົດທີ່ 9   :  ວັນຄູແຫ່ງຊາດ"
+                    android:textColor="#33C2C7"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/Score9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="280dp"
+                    android:fontFamily="@font/animated"
+                    android:text="1/10"
+                    android:textColor="#A5A5A5"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/play_lss9"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/btn_manage_play"
+                    android:onClick="Next" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/many10"
+                        android:layout_width="376dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="35dp"
+                        android:background="@color/Tranparent"
+                        android:fontFamily="@font/fontlaos"
+                        android:gravity="left|center_vertical"
+                        android:text="ບົດທີ່ 10 :  ເພື່ອນຮັກ"
+                        android:textColor="#33C2C7"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/Score10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="280dp"
+                        android:fontFamily="@font/animated"
+                        android:text="1/10"
+                        android:textColor="#A5A5A5"
+                        android:textSize="30sp" />
+
+                    <Button
+                        android:id="@+id/play_lss10"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30dp"
+                        android:background="@drawable/btn_manage_play"
+                        android:onClick="Next" />
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/many11"
+                    android:layout_width="376dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="50dp"
+                    android:background="@color/Tranparent"
+                    android:fontFamily="@font/fontlaos"
+                    android:gravity="left|center_vertical"
+                    android:text="ບົດທີ່ 11 :  ເສດຖີສວນກ້ວຍ"
+                    android:textColor="#33C2C7"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/Score11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="280dp"
+                    android:fontFamily="@font/animated"
+                    android:text="1/10"
+                    android:textColor="#A5A5A5"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/play_lss11"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/btn_manage_play"
+                    android:onClick="Next" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/many12"
+                        android:layout_width="376dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="35dp"
+                        android:background="@color/Tranparent"
+                        android:fontFamily="@font/fontlaos"
+                        android:gravity="left|center_vertical"
+                        android:text="ບົດທີ່ 12 :  ຈາລຶກນ້ຳໃຈ 12 ຕຸລາ"
+                        android:textColor="#33C2C7"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/Score12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="280dp"
+                        android:fontFamily="@font/animated"
+                        android:text="1/10"
+                        android:textColor="#A5A5A5"
+                        android:textSize="30sp" />
+
+                    <Button
+                        android:id="@+id/play_lss12"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30dp"
+                        android:background="@drawable/btn_manage_play"
+                        android:onClick="Next" />
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/many15"
+                        android:layout_width="376dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="35dp"
+                        android:background="@color/Tranparent"
+                        android:fontFamily="@font/fontlaos"
+                        android:gravity="left|center_vertical"
+                        android:text="ບົດທີ່ 15 :  ແມ່ນ້ຳລຳເຊໃນປະເທດເຮົາ"
+                        android:textColor="#33C2C7"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/Score15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="280dp"
+                        android:fontFamily="@font/animated"
+                        android:text="1/10"
+                        android:textColor="#A5A5A5"
+                        android:textSize="30sp" />
+
+                    <Button
+                        android:id="@+id/play_lss15"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30dp"
+                        android:background="@drawable/btn_manage_play"
+                        android:onClick="Next" />
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/many16"
+                    android:layout_width="376dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="50dp"
+                    android:background="@color/Tranparent"
+                    android:fontFamily="@font/fontlaos"
+                    android:gravity="left|center_vertical"
+                    android:text="ບົດທີ່ 16 :  ນົກຍາງນາລີໂກລຸ"
+                    android:textColor="#33C2C7"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/Score16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="280dp"
+                    android:fontFamily="@font/animated"
+                    android:text="1/10"
+                    android:textColor="#A5A5A5"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/play_lss16"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/btn_manage_play"
+                    android:onClick="Next" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/many17"
+                        android:layout_width="376dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="35dp"
+                        android:background="@color/Tranparent"
+                        android:fontFamily="@font/fontlaos"
+                        android:gravity="left|center_vertical"
+                        android:text="ບົດທີ່ 17 :  ເຍົາວະຊົນຄົນເກັ່ງ"
+                        android:textColor="#33C2C7"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/Score17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="280dp"
+                        android:fontFamily="@font/animated"
+                        android:text="1/10"
+                        android:textColor="#A5A5A5"
+                        android:textSize="30sp" />
+
+                    <Button
+                        android:id="@+id/play_lss17"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30dp"
+                        android:background="@drawable/btn_manage_play"
+                        android:onClick="Next" />
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/many18"
+                    android:layout_width="376dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="50dp"
+                    android:background="@color/Tranparent"
+                    android:fontFamily="@font/fontlaos"
+                    android:gravity="left|center_vertical"
+                    android:text="ບົດທີ່ 18 :  ເຂື່ອນໄຟຟ້ານ້ຳງື່ມ"
+                    android:textColor="#33C2C7"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/Score18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="280dp"
+                    android:fontFamily="@font/animated"
+                    android:text="1/10"
+                    android:textColor="#A5A5A5"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/play_lss18"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/btn_manage_play"
+                    android:onClick="Next" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/many19"
+                        android:layout_width="376dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="35dp"
+                        android:background="@color/Tranparent"
+                        android:fontFamily="@font/fontlaos"
+                        android:gravity="left|center_vertical"
+                        android:text="ບົດທີ່ 19 :  ໄພນ້ຳຖ້ວມ"
+                        android:textColor="#33C2C7"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/Score19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="280dp"
+                        android:fontFamily="@font/animated"
+                        android:text="1/10"
+                        android:textColor="#A5A5A5"
+                        android:textSize="30sp" />
+
+                    <Button
+                        android:id="@+id/play_lss19"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30dp"
+                        android:background="@drawable/btn_manage_play"
+                        android:onClick="Next" />
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/many20"
+                    android:layout_width="376dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="50dp"
+                    android:background="@color/Tranparent"
+                    android:fontFamily="@font/fontlaos"
+                    android:gravity="left|center_vertical"
+                    android:text="ບົດທີ່ 20 :  ທະຫານພັນທະ"
+                    android:textColor="#33C2C7"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/Score20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="280dp"
+                    android:fontFamily="@font/animated"
+                    android:text="1/10"
+                    android:textColor="#A5A5A5"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/play_lss20"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/btn_manage_play"
+                    android:onClick="Next" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/many21"
+                        android:layout_width="376dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="35dp"
+                        android:background="@color/Tranparent"
+                        android:fontFamily="@font/fontlaos"
+                        android:gravity="left|center_vertical"
+                        android:text="ບົດທີ່ 21 :  ບຸນທາດຫຼວງ"
+                        android:textColor="#33C2C7"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/Score21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="280dp"
+                        android:fontFamily="@font/animated"
+                        android:text="1/10"
+                        android:textColor="#A5A5A5"
+                        android:textSize="30sp" />
+
+                    <Button
+                        android:id="@+id/play_lss21"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30dp"
+                        android:background="@drawable/btn_manage_play"
+                        android:onClick="Next" />
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/many22"
+                    android:layout_width="376dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="50dp"
+                    android:background="@color/Tranparent"
+                    android:fontFamily="@font/fontlaos"
+                    android:gravity="left|center_vertical"
+
+                    android:text="ບົດທີ່ 22 :  ຊັບພະຍາກອນປ່າໄມ້"
+                    android:textColor="#33C2C7"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/Score22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="280dp"
+                    android:fontFamily="@font/animated"
+                    android:text="1/10"
+                    android:textColor="#A5A5A5"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/play_lss22"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/btn_manage_play"
+                    android:onClick="Next" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/many23"
+                        android:layout_width="376dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="35dp"
+                        android:background="@color/Tranparent"
+                        android:fontFamily="@font/fontlaos"
+                        android:gravity="left|center_vertical"
+                        android:text="ບົດທີ່ 23 :  ມະໂຫສົດ ແລະ ຢາທິບ"
+                        android:textColor="#33C2C7"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/Score23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="280dp"
+                        android:fontFamily="@font/animated"
+                        android:text="1/10"
+                        android:textColor="#A5A5A5"
+                        android:textSize="30sp" />
+
+                    <Button
+                        android:id="@+id/play_lss23"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30dp"
+                        android:background="@drawable/btn_manage_play"
+                        android:onClick="Next" />
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/many24"
+                    android:layout_width="376dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="50dp"
+                    android:background="@color/Tranparent"
+                    android:fontFamily="@font/fontlaos"
+                    android:gravity="left|center_vertical"
+                    android:text="ບົດທີ່ 24 :  ຊີວິດຂອງຊາວນາ"
+                    android:textColor="#33C2C7"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/Score24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="280dp"
+                    android:fontFamily="@font/animated"
+                    android:text="1/10"
+                    android:textColor="#A5A5A5"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/play_lss24"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/btn_manage_play"
+                    android:onClick="Next" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/many25"
+                        android:layout_width="376dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="35dp"
+                        android:background="@color/Tranparent"
+                        android:fontFamily="@font/fontlaos"
+                        android:gravity="left|center_vertical"
+                        android:text="ບົດທີ່ 25 :  ຕະຫຼາດເຊົ້າເມືອງວຽງຈັນ"
+                        android:textColor="#33C2C7"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/Score25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="280dp"
+                        android:fontFamily="@font/animated"
+                        android:text="1/10"
+                        android:textColor="#A5A5A5"
+                        android:textSize="30sp" />
+
+                    <Button
+                        android:id="@+id/play_lss25"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30dp"
+                        android:background="@drawable/btn_manage_play"
+                        android:onClick="Next" />
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/many26"
+                    android:layout_width="376dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="50dp"
+                    android:background="@color/Tranparent"
+                    android:fontFamily="@font/fontlaos"
+                    android:gravity="left|center_vertical"
+                    android:text="ບົດທີ່ 26 :  ການຫຼິ້ນກິລາ"
+                    android:textColor="#33C2C7"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/Score26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="280dp"
+                    android:fontFamily="@font/animated"
+                    android:text="1/10"
+                    android:textColor="#A5A5A5"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/play_lss26"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/btn_manage_play"
+                    android:onClick="Next" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/many29"
+                        android:layout_width="376dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="35dp"
+                        android:background="@color/Tranparent"
+                        android:fontFamily="@font/fontlaos"
+                        android:gravity="left|center_vertical"
+                        android:text="ບົດທີ່ 29 :  ອາຊີບຂອງຄົນເຮົາ"
+                        android:textColor="#33C2C7"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/Score29"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="280dp"
+                        android:fontFamily="@font/animated"
+                        android:text="1/10"
+                        android:textColor="#A5A5A5"
+                        android:textSize="30sp" />
+
+                    <Button
+                        android:id="@+id/play_lss29"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30dp"
+                        android:background="@drawable/btn_manage_play"
+                        android:onClick="Next" />
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/many30"
+                    android:layout_width="376dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="50dp"
+                    android:background="@color/Tranparent"
+                    android:fontFamily="@font/fontlaos"
+                    android:gravity="left|center_vertical"
+                    android:text="ບົດທີ່ 30 :  ລັດຖະບານ"
+                    android:textColor="#33C2C7"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/Score30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="280dp"
+                    android:fontFamily="@font/animated"
+                    android:text="1/10"
+                    android:textColor="#A5A5A5"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/play_lss30"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/btn_manage_play"
+                    android:onClick="Next" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/many31"
+                        android:layout_width="376dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="35dp"
+                        android:background="@color/Tranparent"
+                        android:fontFamily="@font/fontlaos"
+                        android:gravity="left|center_vertical"
+                        android:text="ບົດທີ່ 31 :  ມະໂຫສົດໃນໄວເດັກ"
+                        android:textColor="#33C2C7"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/Score31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="280dp"
+                        android:fontFamily="@font/animated"
+                        android:text="1/10"
+                        android:textColor="#A5A5A5"
+                        android:textSize="30sp" />
+
+                    <Button
+                        android:id="@+id/play_lss31"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30dp"
+                        android:background="@drawable/btn_manage_play"
+                        android:onClick="Next" />
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/many32"
+                    android:layout_width="376dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="50dp"
+                    android:background="@color/Tranparent"
+                    android:fontFamily="@font/fontlaos"
+                    android:gravity="left|center_vertical"
+                    android:text="ບົດທີ່ 32 :  ງາມເມືອງລາວ"
+                    android:textColor="#33C2C7"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/Score32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="280dp"
+                    android:fontFamily="@font/animated"
+                    android:text="1/10"
+                    android:textColor="#A5A5A5"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/play_lss32"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/btn_manage_play"
+                    android:onClick="Next" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/many33"
+                        android:layout_width="376dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="35dp"
+                        android:background="@color/Tranparent"
+                        android:fontFamily="@font/fontlaos"
+                        android:gravity="left|center_vertical"
+                        android:text="ບົດທີ່ 33 :  ກອງທັບປະຊາຊົນລາວ"
+                        android:textColor="#33C2C7"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/Score33"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="280dp"
+                        android:fontFamily="@font/animated"
+                        android:text="1/10"
+                        android:textColor="#A5A5A5"
+                        android:textSize="30sp" />
+
+                    <Button
+                        android:id="@+id/play_lss33"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30dp"
+                        android:background="@drawable/btn_manage_play"
+                        android:onClick="Next" />
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/many34"
+                    android:layout_width="376dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="50dp"
+                    android:background="@color/Tranparent"
+                    android:fontFamily="@font/fontlaos"
+                    android:gravity="left|center_vertical"
+                    android:text="ບົດທີ່ 34 :  ໄປສະນີຸ"
+                    android:textColor="#33C2C7"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/Score34"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="280dp"
+                    android:fontFamily="@font/animated"
+                    android:text="1/10"
+                    android:textColor="#A5A5A5"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/play_lss34"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/btn_manage_play"
+                    android:onClick="Next" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/many35"
+                        android:layout_width="376dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="35dp"
+                        android:background="@color/Tranparent"
+                        android:fontFamily="@font/fontlaos"
+                        android:gravity="left|center_vertical"
+                        android:text="ບົດທີ່ 35 :  ເຄື່ອງໂທລະສັບ"
+                        android:textColor="#33C2C7"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/Score35"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="280dp"
+                        android:fontFamily="@font/animated"
+                        android:text="1/10"
+                        android:textColor="#A5A5A5"
+                        android:textSize="30sp" />
+
+                    <Button
+                        android:id="@+id/play_lss35"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30dp"
+                        android:background="@drawable/btn_manage_play"
+                        android:onClick="Next" />
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/many36"
+                    android:layout_width="376dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="50dp"
+                    android:background="@color/Tranparent"
+                    android:fontFamily="@font/fontlaos"
+                    android:gravity="left|center_vertical"
+                    android:text="ບົດທີ່ 36 :  ໂທລະສັບ"
+                    android:textColor="#33C2C7"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/Score36"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="280dp"
+                    android:fontFamily="@font/animated"
+                    android:text="1/10"
+                    android:textColor="#A5A5A5"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/play_lss36"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/btn_manage_play"
+                    android:onClick="Next" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/many37"
+                        android:layout_width="376dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="35dp"
+                        android:background="@color/Tranparent"
+                        android:fontFamily="@font/fontlaos"
+                        android:gravity="left|center_vertical"
+                        android:text="ບົດທີ່ 37 :  ຈົດໝາຍຂອງສາຍບົວ"
+                        android:textColor="#33C2C7"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/Score37"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="280dp"
+                        android:fontFamily="@font/animated"
+                        android:text="1/10"
+                        android:textColor="#A5A5A5"
+                        android:textSize="30sp" />
+
+                    <Button
+                        android:id="@+id/play_lss37"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30dp"
+                        android:background="@drawable/btn_manage_play"
+                        android:onClick="Next" />
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/many38"
+                    android:layout_width="376dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="50dp"
+                    android:background="@color/Tranparent"
+                    android:fontFamily="@font/fontlaos"
+                    android:gravity="left|center_vertical"
+                    android:text="ບົດທີ່ 38 :  ນົກຊີວະຊີວາ"
+                    android:textColor="#33C2C7"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/Score38"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="280dp"
+                    android:fontFamily="@font/animated"
+                    android:text="1/10"
+                    android:textColor="#A5A5A5"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/play_lss38"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/btn_manage_play"
+                    android:onClick="Next" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/many39"
+                        android:layout_width="376dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="35dp"
+                        android:background="@color/Tranparent"
+                        android:fontFamily="@font/fontlaos"
+                        android:gravity="left|center_vertical"
+                        android:text="ບົດທີ່ 39 :  ລີງກັບແຂ້"
+                        android:textColor="#33C2C7"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/Score39"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="280dp"
+                        android:fontFamily="@font/animated"
+                        android:text="1/10"
+                        android:textColor="#A5A5A5"
+                        android:textSize="30sp" />
+
+                    <Button
+                        android:id="@+id/play_lss39"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30dp"
+                        android:background="@drawable/btn_manage_play"
+                        android:onClick="Next" />
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/many40"
+                    android:layout_width="376dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="50dp"
+                    android:background="@color/Tranparent"
+                    android:fontFamily="@font/fontlaos"
+                    android:gravity="left|center_vertical"
+                    android:text="ບົດທີ່ 40 :  ແມ່ນ້ຳຂອງ"
+                    android:textColor="#33C2C7"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/Score40"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="280dp"
+                    android:fontFamily="@font/animated"
+                    android:text="1/10"
+                    android:textColor="#A5A5A5"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/play_lss40"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/btn_manage_play"
+                    android:onClick="Next" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/many41"
+                        android:layout_width="376dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="35dp"
+                        android:background="@color/Tranparent"
+                        android:fontFamily="@font/fontlaos"
+                        android:gravity="left|center_vertical"
+                        android:text="ບົດທີ່ 41 :  ແພດສາດ"
+                        android:textColor="#33C2C7"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/Score41"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="280dp"
+                        android:fontFamily="@font/animated"
+                        android:text="1/10"
+                        android:textColor="#A5A5A5"
+                        android:textSize="30sp" />
+
+                    <Button
+                        android:id="@+id/play_lss41"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30dp"
+                        android:background="@drawable/btn_manage_play"
+                        android:onClick="Next" />
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/many42"
+                    android:layout_width="376dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="50dp"
+                    android:background="@color/Tranparent"
+                    android:fontFamily="@font/fontlaos"
+                    android:gravity="left|center_vertical"
+                    android:text="ບົດທີ່ 42 :  ວຽງໄຊເມືອງແຫ່ງປະຫວັດສາດ"
+                    android:textColor="#33C2C7"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/Score42"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="280dp"
+                    android:fontFamily="@font/animated"
+                    android:text="1/10"
+                    android:textColor="#A5A5A5"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/play_lss42"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/btn_manage_play"
+                    android:onClick="Next" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/many45"
+                        android:layout_width="376dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="35dp"
+                        android:background="@color/Tranparent"
+                        android:fontFamily="@font/fontlaos"
+                        android:gravity="left|center_vertical"
+                        android:text="ບົດທີ່ 45 :  ເສດຖະກິດຄອບຄົວ"
+                        android:textColor="#33C2C7"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/Score45"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="280dp"
+                        android:fontFamily="@font/animated"
+                        android:text="1/10"
+                        android:textColor="#A5A5A5"
+                        android:textSize="30sp" />
+
+                    <Button
+                        android:id="@+id/play_lss45"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30dp"
+                        android:background="@drawable/btn_manage_play"
+                        android:onClick="Next" />
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/many46"
+                    android:layout_width="376dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="50dp"
+                    android:background="@color/Tranparent"
+                    android:fontFamily="@font/fontlaos"
+                    android:gravity="left|center_vertical"
+                    android:text="ບົດທີ່ 46 :  ການຟື້ນຟູສິລະປະຫັດຖະກຳ"
+                    android:textColor="#33C2C7"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/Score46"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="280dp"
+                    android:fontFamily="@font/animated"
+                    android:text="1/10"
+                    android:textColor="#A5A5A5"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/play_lss46"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/btn_manage_play"
+                    android:onClick="Next" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/many47"
+                        android:layout_width="376dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="35dp"
+                        android:background="@color/Tranparent"
+                        android:fontFamily="@font/fontlaos"
+                        android:gravity="left|center_vertical"
+                        android:text="ບົດທີ່ 47 :  ໂຮງງານສີມັງລາວ"
+                        android:textColor="#33C2C7"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/Score47"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="280dp"
+                        android:fontFamily="@font/animated"
+                        android:text="1/10"
+                        android:textColor="#A5A5A5"
+                        android:textSize="30sp" />
+
+                    <Button
+                        android:id="@+id/play_lss47"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30dp"
+                        android:background="@drawable/btn_manage_play"
+                        android:onClick="Next" />
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/many48"
+                    android:layout_width="376dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="50dp"
+                    android:background="@color/Tranparent"
+                    android:fontFamily="@font/fontlaos"
+                    android:gravity="left|center_vertical"
+                    android:text="ບົດທີ່ 48 :  ຍາມໃບໄມ່ປົ່ງ"
+                    android:textColor="#33C2C7"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/Score48"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="280dp"
+                    android:fontFamily="@font/animated"
+                    android:text="1/10"
+                    android:textColor="#A5A5A5"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/play_lss48"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/btn_manage_play"
+                    android:onClick="Next" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/many49"
+                        android:layout_width="376dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="35dp"
+                        android:background="@color/Tranparent"
+                        android:fontFamily="@font/fontlaos"
+                        android:gravity="left|center_vertical"
+                        android:text="ບົດທີ່ 49 :  ກົບກັບງູ"
+                        android:textColor="#33C2C7"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/Score49"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="280dp"
+                        android:fontFamily="@font/animated"
+                        android:text="1/10"
+                        android:textColor="#A5A5A5"
+                        android:textSize="30sp" />
+
+                    <Button
+                        android:id="@+id/play_lss49"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30dp"
+                        android:background="@drawable/btn_manage_play"
+                        android:onClick="Next" />
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/many50"
+                    android:layout_width="376dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="50dp"
+                    android:background="@color/Tranparent"
+                    android:fontFamily="@font/fontlaos"
+                    android:gravity="left|center_vertical"
+                    android:text="ບົດທີ່ 50 :  ການບຳລຸງຮ່າງກາຍ"
+                    android:textColor="#33C2C7"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/Score50"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="280dp"
+                    android:fontFamily="@font/animated"
+                    android:text="1/10"
+                    android:textColor="#A5A5A5"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/play_lss50"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/btn_manage_play"
+                    android:onClick="Next" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/many51"
+                        android:layout_width="376dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="35dp"
+                        android:background="@color/Tranparent"
+                        android:fontFamily="@font/fontlaos"
+                        android:gravity="left|center_vertical"
+                        android:text="ບົດທີ່ 51 :  ໄຫຫີນ"
+                        android:textColor="#33C2C7"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/Score51"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="280dp"
+                        android:fontFamily="@font/animated"
+                        android:text="1/10"
+                        android:textColor="#A5A5A5"
+                        android:textSize="30sp" />
+
+                    <Button
+                        android:id="@+id/play_lss51"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30dp"
+                        android:background="@drawable/btn_manage_play"
+                        android:onClick="Next" />
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/many52"
+                    android:layout_width="376dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="50dp"
+                    android:background="@color/Tranparent"
+                    android:fontFamily="@font/fontlaos"
+                    android:gravity="left|center_vertical"
+                    android:text="ບົດທີ່ 52 :  ໝູເຮັດນາໝາກິນເຂົ້າ"
+                    android:textColor="#33C2C7"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/Score52"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="280dp"
+                    android:fontFamily="@font/animated"
+                    android:text="1/10"
+                    android:textColor="#A5A5A5"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/play_lss52"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/btn_manage_play"
+                    android:onClick="Next" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/many53"
+                        android:layout_width="376dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="35dp"
+                        android:background="@color/Tranparent"
+                        android:fontFamily="@font/fontlaos"
+                        android:gravity="left|center_vertical"
+                        android:text="ບົດທີ່ 53 :  ການທ່ອງທ່ຽວ"
+                        android:textColor="#33C2C7"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/Score53"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="280dp"
+                        android:fontFamily="@font/animated"
+                        android:text="1/10"
+                        android:textColor="#A5A5A5"
+                        android:textSize="30sp" />
+
+                    <Button
+                        android:id="@+id/play_lss53"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30dp"
+                        android:background="@drawable/btn_manage_play"
+                        android:onClick="Next" />
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/many54"
+                    android:layout_width="376dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="50dp"
+                    android:background="@color/Tranparent"
+                    android:fontFamily="@font/fontlaos"
+                    android:gravity="left|center_vertical"
+                    android:text="ບົດທີ່ 54 :  ແຫຼ່ງທ່ອງທ່ຽວຂອງລາວ"
+                    android:textColor="#33C2C7"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/Score54"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="280dp"
+                    android:fontFamily="@font/animated"
+                    android:text="1/10"
+                    android:textColor="#A5A5A5"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/play_lss54"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/btn_manage_play"
+                    android:onClick="Next" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/many55"
+                        android:layout_width="376dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="35dp"
+                        android:background="@color/Tranparent"
+                        android:fontFamily="@font/fontlaos"
+                        android:gravity="left|center_vertical"
+                        android:text="ບົດທີ່ 55 :  ເສນາໝາກຂີ້ກາ"
+                        android:textColor="#33C2C7"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/Score55"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="280dp"
+                        android:fontFamily="@font/animated"
+                        android:text="1/10"
+                        android:textColor="#A5A5A5"
+                        android:textSize="30sp" />
+
+                    <Button
+                        android:id="@+id/play_lss55"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30dp"
+                        android:background="@drawable/btn_manage_play"
+                        android:onClick="Next" />
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/many56"
+                    android:layout_width="376dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="50dp"
+                    android:background="@color/Tranparent"
+                    android:fontFamily="@font/fontlaos"
+                    android:gravity="left|center_vertical"
+                    android:text="ບົດທີ່ 56 :  ປູກຕົ້ນໄມ່ໃຫ້ເປັນປ່າ"
+                    android:textColor="#33C2C7"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/Score56"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="280dp"
+                    android:fontFamily="@font/animated"
+                    android:text="1/10"
+                    android:textColor="#A5A5A5"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/play_lss56"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/btn_manage_play"
+                    android:onClick="Next" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="376dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="35dp"
+                        android:background="@color/Tranparent"
+                        android:fontFamily="@font/fontlaos"
+                        android:gravity="left|center_vertical"
+                        android:textColor="#33C2C7"
+                        android:textSize="25sp" />
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
